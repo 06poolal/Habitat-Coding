@@ -4,8 +4,8 @@
 
 
 # Proportions CSV's
-    # Contains all of the spread sheets which are used to in the code to create the proportions for spring/winter crops,
-        # stubble types, crop types, stubble or bare earth etc.
+    # Contains all of the spread sheets which are used to in the code to create the proportions for spring/winter
+        # crops, stubble types, crop types, stubble or bare earth etc.
         
    # Any Stubble.csv
         # Creates the proportion for any WFBS Level 2 stubble type
