@@ -2,6 +2,15 @@
     # Coding for turning BBS habitat code into WFBS habitat code. Unable to upload the BBS data online, it is
         # subscription only.
 
+# Final_Habitat_Algorithm.R
+    # Contains the R code which is used on the Breeding Bird Survey (BBS) data to translate the BBS habitat codes
+        # into Winter Farmland Bird Survey (WFBS) habitat codes.
+
+
+# bbs county to region.csv
+    # Used to translate the counties used in the BBS survey into the government NUTS1 regions which the proportion
+        # .csv's use
+
 
 # Proportions CSV's
     # Contains all of the spread sheets which are used to in the code to create the proportions for spring/winter
@@ -18,6 +27,10 @@
    
    # Brassica
         # Creates the proportions for any WFBS Level 1 that can preced a Brassica crop
+        # I need to look at this again and find the proper area of brassicas which are left over winter, a random
+            # number has been pulled from thin air (2%)
+        # May need to create in intermediary column for this to change it to allow for the different proportions,
+            # not sure if the proportions are correct. Must do before publishing
    
    # C.W Stubble.csv
         # Creates the proportions for clean and weedy stubble types, for WFBS Level 3
@@ -47,21 +60,23 @@
         # Creates the proportions of Stubble to Bare Earth
    
    # W.Cereals.csv
-        # Creates the proportions for the different types of cereal crop which were winter sown
-        
-        
-# Complete_Hab - Copy - Copy (2).R
-    # Contains the R code which is used on the Breeding Bird Survey data to translate into Winter Farmland Bird Survey
-        # Data
+        # Creates the proportions for the different types of cereal crop which were winter sown        
 
 
-# bbs county to region.csv
-    # Used to translate the counties used in the BBS survey into the government NUTS1 regions which the proportions
-        # relate to
+# Checking Final Algorithm.R
+    # Used to run the Test.csv code through the R code
+    # Should be used in conjunction with Validation.R
+    
     
 # Validation.R
     # Contains the R code which is used to check whether all of the outputs of the code are correct, against the
-        # potential options available for each BBS combination
+        # potential options available for each BBS combination, can be used on any output from the algorithm, not
+        # just Test.csv
+        
+        
+# Test.csv
+    # Contains all the possible combinations of BBS codes, and all the other columns (date, transno, gridref etc.)
+        #  necessary to be input into the Checking Final Algorithm.R
         
         
 # Check.xlsx
@@ -70,22 +85,14 @@
 
 
 # Check A.csv
-    # Contains the manually created WFBS .xlsxcodes which WFBS Levels 1, 2 and 3a should come out as from the 
-        # BBS translation
+    # Contains each possible BBS combination for Levels 2 and 4a, and all their manually created potential WFBS codes
+        #  for WFBS Levels 1, 2 and 3a as the output should be through the algorithm
 
 
 # CheckB2.csv
-    # Contains the manually created WFBS codes which WFBS Levels 1, 2, 3a and 3b should come out as from the
-        # BBS translation
+    # Contains each possible BBS combination for Levels 2, 4a and 4b, and all their the manually created potential
+        # WFBS codes for WFBS Levels 1, 2, 3a and 3b as the output should be through the algorithm
 
-
-# Test.csv
-    # Contains all the possible combinations of BBS codes, and all the other necessary data needed to be input
-        # into the Complete_Hab - Copy.R
-
-
-# Complete_Hab - Copy.R
-    # Used to run the Test.csv code through the R code
 
 # habitat conversion Assumptions (1).xlsx
     # Contains all of the assumptions which were used to create the code and the proportions with the 
